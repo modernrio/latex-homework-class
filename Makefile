@@ -18,12 +18,15 @@ veryclean: clean
 	rm -f $(TARGET).pdf
 
 view: $(TARGET).pdf
-	if [ "Darwin" = "$(shell uname)" ]; then open $(TARGET).pdf ; else evince $(TARGET).pdf ; fi
+	if [ "Darwin" = "$(shell uname)" ]; then open $(TARGET).pdf ; else zathura $(TARGET).pdf ; fi
 
 submit: $(TARGET).pdf
 	cp $(TARGET).pdf ../
 
 print: $(TARGET).pdf
 	lpr $(TARGET).pdf
+
+install:
+	cp homework.cls ${HOME}/$(kpsewich -var-value=TEXMFHOME)/texmf/tex/latex/homework.cls
 
 .PHONY: all again touch clean veryclean view print
