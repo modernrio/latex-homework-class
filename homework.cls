@@ -48,6 +48,19 @@
 % Links
 \RequirePackage{hyperref}
 
+% German characters
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[ngerman]{babel}
+
+\usepackage[%
+    left=2.5cm,%
+    right=2.5cm,%
+    top=2.5cm,%
+    bottom=2.5cm,%
+    paperheight=29.7cm,%
+    paperwidth=21.0cm%
+]{geometry}%
+
 % ----- Questions -------------------------------------------------------------
 \newcounter{questionCounter}
 \newcounter{partCounter}[questionCounter]
@@ -79,7 +92,7 @@
           \if\writtensection0
           \noindent{\bf \questiontype\ \arabic{questionCounter}.}%
           \else
-          \noindent{\bf \questiontype\ \writtensection.\arabic{questionCounter}}%
+          \noindent{\bf \questiontype\ \writtensection\arabic{questionCounter}}%
         \fi
       \vspace{0.3em} \hrule \vspace{.1in}%
   \end{minipage}
@@ -128,6 +141,16 @@
 \newcommand{\indhyp}{\item[Induction Hypothesis]\mbox{}\\}
 \newcommand{\indstep}{\item[Induction Step]\mbox{}\\}
 
+% ----- Relations Umgebung -------------------------------------------------
+
+\newenvironment{relation}[0]{%
+  \begin{description}
+}{\end{description}}
+
+\newcommand{\refl}{\item[Reflexivität]\mbox{}\\}
+\newcommand{\sym}{\item[Symmetrie]\mbox{}\\}
+\newcommand{\trans}{\item[Transitivität]\mbox{}\\}
+
 % ----- Answer Box ------------------------------------------------------------
 
 \newcommand{\answerbox}[1]{%
@@ -155,7 +178,7 @@
     \setlength{\headheight}{15.2pt}
     \setlength{\headsep}{0.2in}
     \lhead{\hwclass{} \hwlecture\hwsection}%
-    \chead{\hwname{} (\hwemail)}%
+    \chead{\hwname{}}%
     \rhead{\hwtype{} \hwnum}%
 
     % Setup hrule in header
