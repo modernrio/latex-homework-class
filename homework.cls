@@ -191,7 +191,7 @@
     \begin{center}
       {\Large \hwclass{} \hwtype{} \hwnum}
 
-      \hwname{} (\hwemail)
+      \hwname{}
 
       \today
     \end{center}
@@ -208,7 +208,7 @@
     \begin{center}
       {\Large \hwclass{} \hwtype{} \hwnum}
 
-      \hwname{} (\hwemail)
+      \hwname{}
 
       \today
     \end{center}
