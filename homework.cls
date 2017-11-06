@@ -151,6 +151,16 @@
 \newcommand{\sym}{\item[Symmetrie]\mbox{}\\}
 \newcommand{\trans}{\item[Transitivität]\mbox{}\\}
 
+% ----- Funktion Umgebung -------------------------------------------------
+
+\newenvironment{function}[0]{%
+  \begin{description}
+}{\end{description}}
+
+\newcommand{\surj}{\item[Surjektivität]\mbox{}\\}
+\newcommand{\inj}{\item[Injektivität]\mbox{}\\}
+\newcommand{\bij}{\item[Bijektivität]\mbox{}\\}
+
 % ----- Answer Box ------------------------------------------------------------
 
 \newcommand{\answerbox}[1]{%
