@@ -44,6 +44,7 @@
 % Header & Page Setup
 \RequirePackage{fancyhdr}
 \ifthenelse{\equal{\@oplargemargins}{1}}{}{\RequirePackage{fullpage}}
+\RequirePackage{etoolbox}
 
 % Links
 \RequirePackage{hyperref}
@@ -187,7 +188,7 @@
     % Setup header
     \setlength{\headheight}{15.2pt}
     \setlength{\headsep}{0.2in}
-    \lhead{\hwclass{} \hwlecture\hwsection}%
+    \lhead{\ifdef{\hwabbr}{\hwabbr{}}{\hwclass{}} \hwlecture\hwsection}%
     \chead{\hwname{}}%
     \rhead{\hwtype{} \hwnum}%
 
