@@ -137,9 +137,9 @@
   \begin{description}
 }{\end{description}}
 
-\newcommand{\basecase}{\item[Base Case]\mbox{}\\}
-\newcommand{\indhyp}{\item[Induction Hypothesis]\mbox{}\\}
-\newcommand{\indstep}{\item[Induction Step]\mbox{}\\}
+\newcommand{\basecase}{\item[Induktionsanfang]\mbox{}\\}
+\newcommand{\indhyp}{\item[Induktionsvoraussetzung]\mbox{}\\}
+\newcommand{\indstep}{\item[Induktionsschluss]\mbox{}\\}
 
 % ----- Relations Umgebung -------------------------------------------------
 
