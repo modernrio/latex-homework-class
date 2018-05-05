@@ -202,7 +202,7 @@
     \begin{center}
       {\Large \hwclass{} \hwtype{} \hwnum}
 
-      \hwname{}
+      \hwname{} \ifdef{\hwemail}{(\hwemail)}{}
 
       \today
     \end{center}
@@ -219,7 +219,7 @@
     \begin{center}
       {\Large \hwclass{} \hwtype{} \hwnum}
 
-      \hwname{}
+      \hwname{} \ifdef{\hwemail}{(\hwemail)}{}
 
       \today
     \end{center}
