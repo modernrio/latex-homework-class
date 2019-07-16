@@ -90,7 +90,7 @@
       \ifx\writtensection\undefined{}
         \noindent{\bf \questiontype\ \arabic{questionCounter}.}%
         \else
-          \ifnum\writtensection=0
+          \ifx\writtensection\empty
           \noindent{\bf \questiontype\ \arabic{questionCounter}.}%
           \else
           \noindent{\bf \questiontype\ \writtensection\arabic{questionCounter}}%
